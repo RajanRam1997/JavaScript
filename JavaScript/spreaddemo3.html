@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spread demo</title>
+</head>
+<body>
+    <script>
+        let student={
+            roll: 101,
+            name:"Rajan Ram",
+            marks:65
+        }
+        let student2={
+            roll: 102,
+            name:"Bharat kumar",
+            marks:85
+        }
+        let s1={...student}
+        let s2={...student2}
+        console.log(s1)
+        console.log(s2)
+        console.log(s2.roll)
+        console.log(s2.name)
+        console.log(s2.marks)
+    </script>
+</body>
+</html>

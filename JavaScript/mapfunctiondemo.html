@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Function Demo</title>
+</head>
+<body>
+    <script>
+        a = [10,20,30,40,50,60,70,80,90,100]
+           /* for(i=0;i<a.length;i++){
+                document.write("<br><h1>"+a[i]+"<h1>")
+            }*/
+
+               /* for(i in a){
+                    document.write("<br><h1>"+a[i]+"<h1>")
+                }*/
+               function sq(){
+
+               }
+
+                for(i of a){
+                    document.write("<br><h1>"+i+"<h1>")
+                }
+                b=[]
+                for(i of a){
+                    b.push(i*i)
+                }
+                for(i of b){
+                    document.write("<br><h1>"+i+"<h1>")
+                }
+    </script>
+</body>
+</html>

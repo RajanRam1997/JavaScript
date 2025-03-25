@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reverse String Demo</title>
+</head>
+<body>
+    <script>
+        let s1="malylam"
+       /* let s2=""
+        for(i=s1.length-1;i>=0;i--){
+            s2=s2+s1.charAt(i)
+        }*/
+       let s2=s1.split("").reverse().join("")
+        document.write(s2)
+        if(s1==s2){
+            document.write("is Palindrome")
+        }
+        else{
+            document.write("is not Palindrome")
+        }
+
+    </script>
+</body>
+</html>

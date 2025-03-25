@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var fruitlist=['banana','apple','watermalen','pomogranate','DragonFruit','Strawbarray']
+    document.write(fruitlist)
+    document.write("<br><h1>"+"length of array :"+fruitlist.length+"</h1>")
+
+    //shift method is revome the 0th element from array
+    fruitlist.shift()
+    document.write("<br><h1>"+fruitlist+"</h1>")
+
+    //pop method remove the last element from array
+    fruitlist.pop()
+    document.write("<br><h1>"+fruitlist+"</h1>")
+    
+    //unshift method is add the element in beging
+    fruitlist.unshift("Kiwi","jacakle","guava")
+    document.write("<br><h1>"+fruitlist+"</h1>")
+
+    //push method is add the element to end form array
+    fruitlist.push("mango","plum")
+    document.write("<br><h3>"+fruitlist+"</h3>")
+
+
+    //splice method is add the element to centter from arraylist
+    fruitlist.splice(3,2,"Rasbarry","litchi")
+    document.write("<br><h3>"+fruitlist+"</h3")
+
+    //document.write("<br><h1>"+fruitlist.join("-")+"</h1>")
+    document.write("<br>"+fruitlist.lastIndexOf("plum"))
+    //fruitlist.reverse()
+    document.write("<br><h1>"+fruitlist.reverse()+"<h1>")
+    
+    fruitlist.slice(5,9)
+    document.write("<br><h2>"+fruitlist+"<h2>")
+
+    </script>
+
+</body>
+</html>

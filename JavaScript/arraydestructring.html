@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Destructring</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <script>
+        //array is a group of objects.
+        //array is created using comma seprated values
+        //enclosed inside [] brackets
+        let array1=[85,52,92,65,9574,85.05,56]
+        //let legth=array1.length
+        let elem=document.getElementById("p1")
+            /*for(i=0;i,array1.length;i++){
+                p1.innerHTML=p1.innerHTML+"<br>"+array1[i]
+            }*/
+        //    for(i in array1){
+        //     elem.innerHTML=elem.innerHTML+"<br>"+array1[i]
+        //    }
+        for(n of array1){
+            elem.innerHTML=elem.innerHTML+"<br>"+n+"."
+           }
+
+
+           let array2=["Mango","Graps","PineApple","Litchi","Kiwi"]
+                // let a=array2[0]
+                // let b=array2[1]
+                let [a,b,c]=array2
+                document.write(a,"-")
+                document.write(b,"-")
+                document.write(c)
+
+            
+    </script>
+</body>
+</html>

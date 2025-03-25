@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Demo</title>
+</head>
+<body>
+    <h1>Prime Number :</h1>
+    <script>
+        /*function evenno(n){
+            if(n%2==0){
+                return true
+            }else {
+                return false
+            }
+        }*/
+        // function primeno(n){
+        //      if (n%2==0 || n%3==0){
+        //          return true
+        //      }
+        //      else{
+        //         return false
+        //      }
+        // }
+        function prime(no){
+            for(i=2;i<no;i++){
+                if(no%i==0){
+                    return false
+                }
+            }
+            return true
+        }
+       /* function oddno(n){
+            if(n%2==1){
+                return true
+            }
+            else{
+                return false
+            }
+        }*/
+        a=[50,23,55,69,84,55,65,63,21,22]
+        //Even Number Logic
+        /*b1=a.filter(evenno)
+        for(no of b1){
+            document.write("<br><h1>"+no+"</h1>")
+        }*/
+       //odd number logic
+        // b2=a.filter(oddno){
+        //     for(no of b2){
+        //         documet.write("<br><h1>"+no+"</h1>")
+        //     }
+        
+       //logic of prime number
+        // b2=a.filter(primeno)
+        // for(no of b2){
+        //     document.write("<br><h1>"+no+"</h1>")
+        // }
+        
+    </script>
+</body>
+</html>

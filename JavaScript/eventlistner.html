@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener Demo</title>
+</head>
+<body>
+    <p id="p1">This is Simple Paragraph</p>
+    <button id="b1">Click Here</button>
+    <script>
+        //here event listener will assign both values
+        let elem = document.getElementById("p1")
+        let btn = document.getElementById("b1")
+        btn.addEventListener("click", ()=>{
+            elem.style.backgroundColor="yellow"
+        })
+        btn.addEventListener("click", ()=>{
+            elem.style.color="red"
+            elem.style.fontSize="30px"
+        })
+        btn.addEventListener("mouseover", () => {
+            elem.style.border="3px solid blue"
+        })
+        btn.addEventListener("mouseout", () => {
+            elem.style.border="0px"
+        })
+        btn.addEventListener("mouseover", () => {
+            elem.style.border="3px doted blue"
+        })
+        //function f1(){
+           // elem.style.backgroundColor="yellow"
+        //}
+
+        // function f2(){
+        //     elem.style.color="red"
+        //     elem.style.fontSize="30px"
+        // }
+    </script>
+
+<!-- javascript EventHandler
+elem.onclick=functionname
+
+Event Listener
+elem.addEventListener("eventname",functionname)
+-->
+
+</body>
+</html>
+ 

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic color</title>
+</head>
+<body>
+    <select id="s1" onclick="f1()">
+        <option value="Red">Red</option>
+        <option value="Green">Green</option>
+        <option value="Yellow">Yello</option>
+        <option value="Black">Black</option>
+        <option value="Blue">Blue</option>
+        <option value="Orange">Orange</option>
+    </select>
+    <script>
+        function f1(){
+        let elem=document.getElementById("s1")
+        let c1=elem.value
+        document.body.style.backgroundColor=c1
+
+        }
+    </script>
+</body>
+</html>

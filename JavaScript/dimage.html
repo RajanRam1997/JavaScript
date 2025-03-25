@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyanmic Image</title>
+</head>
+<body>
+    <select id="i1" onclick="f1()">
+        <option value="Vimages.jpg">Vimage</option>
+        <option value="Vimage2.jpg">Vimage2</option>
+        <option value="Vimage3.jpg">Vimage3</option>
+    </select>
+    <script>
+        function f1(){
+            let elem=document.getElementById("i1")
+            let c1=elem.value
+            console.log(c1)
+            document.body.style.backgroundImage="url("+ c1 +")"
+            //document.body.style.backgroundSize="cover"
+        }
+    </script>
+</body>
+</html>

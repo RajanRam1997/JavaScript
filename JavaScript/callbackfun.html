@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Back function</title>
+</head>
+<body>
+    <script>
+        //callback is a function which is passed as a parameter to another function
+
+        let x=(msg,f1)=>{
+            f1()
+            document.write(msg)
+        }
+        let ss=()=>{
+            document.write("Hello")
+        }
+        x("Good Afternoon",ss)
+
+
+        let show=()=>
+        {
+            document.write("welcome")
+        }
+        setTimeout(show,2000)
+    </script>
+</body>
+</html>

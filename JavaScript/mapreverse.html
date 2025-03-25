@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Reverse</title>
+</head>
+<body>
+    <script>
+        a=[256,152,64,86,5546,54,52398866,152]
+        //function reverseno
+        // (no){
+        //     rev=0
+        //     while(no>0){
+        //         d=no%10
+        //         rev=rev*10+d
+        //         no=Math.floor(no/10)
+        //     }
+        //    return rev
+        // }
+        b = a.map((no)=>{
+            rev=0
+            while(no>0){
+                d=no%10
+                rev=rev*10+d
+                no=Math.floor(no/10)
+            }
+           return rev
+        })
+        for(n of b){
+            document.write("<br><h1>"+n+"</h1>")
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Time Out and Set Interval</title>
+</head>
+<body>
+    <p id="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum numquam ut obcaecati consectetur expedita aliquam maxime facere aperiam, maiores corporis hic vero repudiandae adipisci saepe tenetur sed in non cum porro quia! Sunt reiciendis iusto ullam ea corrupti eius dolor? Neque modi commodi libero illo aliquam magnam adipisci nesciunt voluptatem iure quis necessitatibus quas rem debitis repellat culpa, ab saepe facilis amet quibusdam! Rerum temporibus, quidem amet ex aliquam fugiat ratione. Quaerat reprehenderit perspiciatis voluptas? Nostrum maxime rem enim repellat officia asperiores quia atque impedit dolorem? Ab expedita in debitis consectetur ducimus? Quia laborum harum at repellendus dolor accusantium saepe.</p>
+
+    <p id="p2"></p>
+    <script>
+        function f1(){
+            let elem=document.getElementById("p1")
+            elem.style.fontSize="30px"
+            elem.style.backgroundColor="orange"
+            elem.style.color="blue"
+        }
+        setTimeout(f1,2000)
+
+            // let elem1=document.getElementById("p2")
+            // function f1(){
+            //     let d1=new Date()
+            //     elem.innerHTML="<h1>"+ d1.getTime() +"</h>"
+            // }
+            // setInterval(f1, 2000)
+    </script>
+</body>
+</html>

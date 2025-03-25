@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBack</title>
+</head>
+<body>
+    <script>
+        let x=(name, callback)=>{
+            document.write("Hello !"+"<pre>"+ name+"</pre>")
+            callback()
+        }
+        let show=()=>{
+            document.write("Good Afternoon !!")
+        }
+        x("Rajan Ram",show)
+
+
+        let y=(name,callback)=>{
+            document.write("<br><br>"+"Hello !"+"<pre>" +name+"</pre>")
+            callback()
+        }
+        let print=()=>{
+            document.write("Good Eveaning !!")
+        }
+        y("Tulasi Kumari",print)
+    </script>
+</body>
+</html>

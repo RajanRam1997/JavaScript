@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>`
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age</title>
+</head>
+<body>
+    <label>Enter Your Name</label>
+    <input type="text" name="txtname" id="txtname">
+    <label for="">Enter Your Age</label>
+    <input type="number" name="txtage" id="txtage">
+    <button onclick="f1()">Click Me</button>
+    <p id="p1"></p>
+    <script>
+        function f1(){
+            let n=txtname.value
+            let a=txtage.value
+            let elem=document.getElementById("p1")
+            if(a>=18){
+                document.write("Hello"+ n + "you can vote")
+            }else{
+                document.write("Hello" + n + "you can not vote") 
+            }
+        }
+    </script>
+</body>
+</html>

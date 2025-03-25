@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Demo</title>
+</head>
+<body>
+    <script>
+       /*class Employee{
+            constructor(id,name,salary){
+                this.id=id
+                this.name=name
+                this.salary=salary
+            }
+        }
+        //e1=new Employee(101,"Rajan Ram", 15800.00)*/
+        e1={
+            id:102
+            ,name :"rajan ram",
+            salary:15000
+        }
+        document.writeln(e1.id)
+        document.writeln(e1.name)
+        document.writeln(e1.salary)
+        document.writeln(typeof(e1))
+//json.stringfy methid converts javascript object
+        s1=JSON.stringify(e1)
+        document.write("<br><h1>"+s1+"</h1>")
+        document.write("<br><h1>"+typeof (s1)+"</h1>")
+    </script>
+</body>
+</html>

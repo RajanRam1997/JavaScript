@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Demo</title>
+</head>
+<body>
+    <script>
+        let s1='hello javascript'
+        document.write("length is ="+s1.length)
+
+        document.write("<br>"+s1.charAt(8))
+
+        document.write("<br>"+s1.codePointAt(9))
+
+        document.write("<br>"+s1.repeat(3))
+
+        document.write("<br>"+s1.replace("a","z"))
+
+        s1= "js is a client side programming language"
+        s2=s1.split(" ")
+        document.write("<br>"+ s2)
+        //trim method removies all whitespace characters
+        s1.trim()
+    </script>
+</body>
+</html>

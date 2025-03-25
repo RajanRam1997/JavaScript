@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Select The Day:<select id="d1">     </select>
+    Select The Month:<select id="m1">     </select>
+    Select The Year:<select id="y1">     </select>
+    <script>
+        let s=""
+        for (i=1;i<=30;i++) {
+            s=s+"<option>"+i+"</option>"
+        }
+        let elem=document.getElementById("d1")
+        elem.innerHTML=s
+
+        let m=["Jan","Feb","Mar","Apir","May","jun","jul","Aug","Sep","Oct","Nov","Dec"]
+        let elem1=document.getElementById("m1")
+        let len=m.length
+        for(i=0;i<=len;i++){
+            m=m+"<option>"+ m[i] +"</option>"
+        }
+        elem1.innerHTML=m
+//show the drop down list with 10 book names.
+        let y=""
+        for(i=1990;i<=2025;i++){
+            y=y+"<option>"+i+"</option>"
+        }
+        let elem2=document.getElementById("y1")
+        elem2.innerHTML=y
+    </script>
+</body>
+</html>

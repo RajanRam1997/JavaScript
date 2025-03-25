@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Closure Function</title>
+</head>
+<body>
+    <script>
+        /*let add=()=>{
+            let counter=0
+            let plus=()=>{
+                counter+=1
+            }
+            plus()
+            return counter
+        }
+        document.write(add())
+        document.write(add())
+        document.write(add())
+        //add()
+       // document.write(add)*/
+       /*let add=(()=>{
+        let counter=0;
+        return ()=>{
+            counter++;
+            return counter
+        }
+       })
+       ()
+       document.write(add())
+       document.write(add())
+       document.write(add())*/
+
+
+        function makefunc(){
+            const name="Rajan"
+            function displayname(){
+                console.log(name);
+            }
+            return displayname;
+        }
+        const myfunc=makefunc();
+        myfunc();
+
+    </script>
+</body>
+</html>

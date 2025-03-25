@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handler</title>
+</head>
+<body>
+    <p id="p1">This is Simple Paragraph</p>
+    <button id="b1">Click Here</button>
+    <script>
+        //here event handler will assign only last values
+        let elem = document.getElementById("p1")
+        let btn = document.getElementById("b1")
+        btn.onclick=f1
+        btn.onclick=f2
+        function f1(){
+            elem.style.backgroundColor="yellow"
+        }
+
+        function f2(){
+            elem.style.color="red"
+            elem.style.fontSize="30px"
+        }
+    </script>
+</body>
+</html>

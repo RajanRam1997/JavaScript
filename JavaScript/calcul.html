@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+    <h1 class="text-center">My Calculator</h1>
+    <div class="text-center mt-5">
+    <label>Enter first number :</label>
+    <input type="text" id="txtno1" name="txtno1"><br><br>
+    </div>
+    <div class="text-center mt-5">
+    <label>Enter Second number :</label>
+    <input type="text" name="txtno2" id="txtno2"><br><br>
+    </div class="text-center">
+    <div class="text-center">
+    <button id="btnadd">+</button>
+    <button id="btnsub">-</button>
+    <button id="btnmult">*</button>
+    <button id="btndiv">/</button>
+    </div>
+    <p id="result"></p>
+    <script>
+        
+        let b1= document.getElementById("btnadd")
+        let ans=document.getElementById("result")
+        b1.onclick=() =>{
+            let n1=parseInt(txtno1.value)
+            let n2=parseInt(txtno2.value)
+        //alert("Addition" + (n1+n2))
+        ans.innerHTML="Addition :"+ (n1+n2)
+        //alert(n2)
+        }
+        let b2= document.getElementById("btnsub")
+        b2.onclick=() =>{
+            let n1=parseInt(txtno1.value)
+            let n2=parseInt(txtno2.value)
+        //alert("Subtraction" + (n1-n2))
+        ans.innerHTML="Subtraction :"+ (n1-n2)
+        }
+        let b3= document.getElementById("btnmult")
+        b3.onclick=() =>{
+            let n1=parseInt(txtno1.value)
+            let n2=parseInt(txtno2.value)
+        //alert("Multiplication" + (n1*n2))
+        ans.innerHTML="Multiplication :"+ (n1*n2)
+        }
+        let b4= document.getElementById("btndiv")
+        b4.onclick=() =>{
+            let n1=parseInt(txtno1.value)
+            let n2=parseInt(txtno2.value)
+        //alert("Division" + (n1/n2))
+        ans.innerHTML="Division :"+ (n1/n2)
+        }
+    </script>
+</body>
+</html>

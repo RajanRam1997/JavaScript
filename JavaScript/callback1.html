@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mult=(no,callback)=>{
+            document.write("multiplicatio number :"+"<br><pre>"+no+"</pre>")
+            callback(no)
+        }
+        let show=(no)=>{
+            let a=[10,20,30,40,50,60]
+            let b=[]
+            for(n of a){
+                document.write("<br><pre>"+n+"</pre>")
+                b.push(n*no)
+            }
+            document.write("<br>")
+            for(n of b){
+                document.write(n)
+            }
+        }
+        mult(5,show)
+
+    </script>
+</body>
+</html>
